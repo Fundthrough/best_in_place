@@ -56,7 +56,8 @@ module BestInPlace
         opts[:warning_before_save].presence
       options[:data]['bip-warning-before-save-with-new-values'] =
         opts[:warning_before_save_with_new_values].presence
-
+      options[:data]['bip-warning-if-old-value'] =
+        opts[:warning_if_old_value].presence
       options[:data]['bip-raw'] = 'true' if opts[:raw]
 
       # delete nil keys only
